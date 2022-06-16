@@ -1,0 +1,152 @@
+body,header,img,h1,h2,main,section,p,div,textarea,button,label,footer,hr{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    
+}
+body{
+    background-color: #eeee;
+}
+
+header{
+    background-color: #90e77f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+header img{
+    width: 100px;
+    height: 70px;
+}
+header h1{
+    color: green;
+    margin-left: 5px;
+    font-weight: bold;
+
+}
+
+.app{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 400px;
+
+
+}
+
+section{
+    background-color: white;
+    box-shadow: 5px 5px 5px #808080;
+    padding: 30px;
+    width: 600px;
+    color: #808080;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+section h2{
+    text-align: center;
+    font-size:medium;
+    
+}
+section p{
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+
+.text-left{
+    text-align: center;
+}
+
+
+section label{
+    display: none;
+}
+section textarea{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+}
+section button{
+    background-color: green;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+
+
+.resultado{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(144, 231, 127)
+    
+}
+
+.resultado.mostrarResultado{
+    left: 0;
+    transition: 0.5s;
+    background-color: rgb(144, 231, 127, 0.5)
+        
+
+}
+.resultado span{
+    float: right;
+    margin: 20px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border: solid green 2px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+    
+
+.resultado p{
+    text-align: center;
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 135px;
+    background-color: #90e77f;
+    text-align: center;
+    color: green;
+    
+}
